@@ -11,8 +11,11 @@ curl -O https://lsst-web.ncsa.illinois.edu/~yusra/calexp_dir.tar.gz
 tar xzf calexp_dir.tar.gz
 ```
 
+
 Install the stack either using `lsstsw`: http://developer.lsst.io/en/latest/build-ci/lsstsw.html  or `eups distrib install` https://confluence.lsstcorp.org/display/LSWUG/Building+the+LSST+Stack+from+Source
 
+If you are using distrib install, you can find the latest release here:
+https://sw.lsstcorp.org/eupspkg/tags/?C=M;O=D
 Clone the camera package corresponding to DECam
 
 ```

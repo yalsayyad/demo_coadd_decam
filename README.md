@@ -28,9 +28,10 @@ setup -r obs_decam -t $TAG
 Before, you make a coadd, you need to create the calexps. These have already been created, but if you'd like to reprocess:
 
 ```
-processCcd.py calexp_dir --output calexp_out_dir  --id visit=0288976 ccdnum=50 --config calibrate.doPhotoCal=False calibrate.doAstrometry=False --configfile decamconfig.py --clobber-config
+processCcd.py calexp_dir --output calexp_out_dir  --id visit=0288976 ccdnum=50 --config calibrate.doPhotoCal=False calibrate.doAstrometry=False --configfile noIsrConfig.py --clobber-config
 ```
 
+The config file contains a redirect, to an `IsrTask` that does nothing. We are starting wil images that have already had the instrument signature removed.
 
 
 Now, make a `SkyMap`
